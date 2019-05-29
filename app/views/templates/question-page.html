@@ -8,12 +8,36 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-three-quarters">
 
-      <h1 class="nhsuk-fieldset__legend--l">Heading or question goes here</h1>
+      <h1 class="nhsuk-fieldset__legend--l">Do you know what you're doing?</h1>
 
       <form id="form_id" action="/templates/check-your-answers">
 
-        <p>[Insert question content here]</p>
+        <div class="nhsuk-form-group">
 
+  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+    
+
+    <span class="nhsuk-hint" id="example-hint">
+      Select an option.
+    </span>
+
+    <div class="nhsuk-radios">
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+          No
+        </label>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+          No, but in red
+        </label>
+      </div>
+    </div>
+  </fieldset>
+
+</div>
         <p>[Visit the <a href="https://beta.nhs.uk/service-manual/">NHS digital service manual</a> for guidance and examples.]</p>
 
         {{ button({
