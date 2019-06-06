@@ -9,3 +9,148 @@
 @import 'components/related-nav';
 
 // Add your extra styles here...
+
+.nhsuk-section--white {
+    background: #fff;
+}
+.nhsuk-section {
+    display: block;
+}
+article, aside, footer, header, nav, section {
+    display: block;
+}
+*, :after, :before {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+user agent stylesheet
+section {
+    display: block;
+}
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    color: #212b32;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100%;
+}
+html {
+    background-color: #d8dde0;
+    font-family: Frutiger W01,Helvetica,Arial,Sans-serif;
+    overflow-y: scroll;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+*, :after, :before {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+*, :after, :before {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+.nhsuk-section .nhsuk-main-wrapper {
+    padding-bottom: 72px;
+    padding-top: 72px;
+}
+.nhsuk-width-container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+.nhsuk-section .nhsuk-main-wrapper {
+    padding-bottom: 72px;
+    padding-top: 72px;
+}
+.nhsuk-main-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: block;
+}
+.nhsuk-main-wrapper>:first-child {
+    margin-top: 0;
+}
+.nhsuk-promo-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+}
+.nhsuk-grid-row {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+.nhsuk-promo-group__item {
+    display: flex;
+}
+.nhsuk-grid-column-one-third {
+    float: left;
+    width: 33.3333%;
+}
+.nhsuk-grid-column-one-third {
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+.nhsuk-promo-group__item .nhsuk-promo {
+    margin-bottom: 0;
+}
+.nhsuk-promo {
+    margin-bottom: 36px;
+    width: 100%;
+}
+.nhsuk-section--white .nhsuk-promo__link-wrapper {
+    background-color: #f0f4f5;
+}
+a:visited {
+    color: #330072;
+}
+.nhsuk-promo__link-wrapper {
+    background-color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 0 0 #d8dde0;
+    display: block;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+}
+a {
+    color: #005eb8;
+}
+.nhsuk-promo__content {
+    padding: 32px;
+}
+.nhsuk-promo__content {
+    padding: 24px;
+}
+.nhsuk-promo__content>:first-child {
+    margin-top: 0;
+}
+.nhsuk-promo__heading {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.nhsuk-promo__content>:last-child {
+    margin-bottom: 0;
+}
+.nhsuk-promo__description {
+    color: #425563;
+}
+.nhsuk-body-m, p {
+    color: inherit;
+}

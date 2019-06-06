@@ -1,0 +1,117 @@
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK prototype kit - Start page template
+{% endblock %}
+
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "#",
+      text: "Home"
+    },
+        {
+      href: "#",
+      text: "Section"
+    }
+  ],
+  href: "#",
+  text: "Subsection"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+
+
+<section class="nhsuk-section nhsuk-section--white">
+ 
+       <div class="nhsuk-width-container nhsuk-main-wrapper">
+
+<h1>About a service</h1>
+<p>Select an option to find out more information.</p> 
+
+     
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+      
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/templates/about-articles">
+    <div class="nhsuk-promo__content">
+      <h2 class="nhsuk-promo__heading">Help with Health Costs</h2>
+      <p class="nhsuk-promo__description">Free prescriptions, help with dental costs</p>
+    </div>
+  </a>
+</div>
+
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="">
+    <div class="nhsuk-promo__content">
+    <h2 class="nhsuk-promo__heading">NHS Pensions</h2>
+      <p class="nhsuk-promo__description">claim your NHS pension, get pension estimates, opt out</p>
+    </div>
+  </a>
+</div>
+
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/service-manual/prototyping-tools">
+    <div class="nhsuk-promo__content">
+      <h2 class="nhsuk-promo__heading">Fines or penalty charge notices</h2>
+      <p class="nhsuk-promo__description">why, how to pay or challenge</p>
+    </div>
+  </a>
+</div>
+      </div>
+        </div>
+  <div class="nhsuk-grid-row nhsuk-promo-group">
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/templates/question-page">
+    <div class="nhsuk-promo__content">
+    <h2 class="nhsuk-promo__heading">Getting healthcare abroad</h2>
+      <p class="nhsuk-promo__description">EHIC, moving abroad, travelling for treatment</p>
+    </div>
+  </a>
+</div>
+
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/service-manual/frontend-library">
+    <div class="nhsuk-promo__content">
+      <h2 class="nhsuk-promo__heading">Student funding</h2>
+      <p class="nhsuk-promo__description">NHS or social work bursaries</p>
+    </div>
+  </a>
+</div>
+
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/service-manual/prototyping-tools">
+    <div class="nhsuk-promo__content">
+      <h2 class="nhsuk-promo__heading">Contact details</h2>
+      <p class="nhsuk-promo__description">Find out how to get in touch</p>
+    </div>
+  </a>
+</div>
+
+  </div>
+
+</section>
+    </div>
+
+
+  </div>
+{% endblock %}

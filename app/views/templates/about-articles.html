@@ -1,0 +1,132 @@
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK prototype kit - Start page template
+{% endblock %}
+
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "#",
+      text: "Home"
+    },
+        {
+      href: "#",
+      text: "Section"
+    }
+  ],
+  href: "#",
+  text: "Subsection"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+
+
+<section class="nhsuk-section nhsuk-section--white">
+ 
+       <div class="nhsuk-width-container nhsuk-main-wrapper">
+
+<h1>About a service</h1>
+<p>Select an option to find out more information.</p> 
+
+     
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/templates/content-page">
+    <div class="nhsuk-promo__content">
+      <h2 class="nhsuk-promo__heading">What is the Low Income Scheme?</h2>
+      <p class="nhsuk-promo__description">Information about LIS and who can apply.</p>
+    </div>
+  </a>
+</div>
+
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="">
+    <div class="nhsuk-promo__content">
+    <h2 class="nhsuk-promo__heading">What is a Medical Exemption certificate?</h2>
+      <p class="nhsuk-promo__description">information about Medex certificates and what it provides.</p>
+    </div>
+  </a>
+</div>
+
+
+        
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/service-manual/prototyping-tools">
+    <div class="nhsuk-promo__content">
+      <h2 class="nhsuk-promo__heading">What is a Prescription Prepayment Certificate?</h2>
+      <p class="nhsuk-promo__description">What a PPC is and how to apply/info about renewals etc.</p>
+    </div>
+  </a>
+</div>
+      </div>
+        </div>
+  <div class="nhsuk-grid-row nhsuk-promo-group">
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/templates/question-page">
+    <div class="nhsuk-promo__content">
+    <h2 class="nhsuk-promo__heading">How does Tax Credit exemption work?</h2>
+      <p class="nhsuk-promo__description">how to get, whether to renew etc.</p>
+    </div>
+  </a>
+</div>
+
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/service-manual/frontend-library">
+    <div class="nhsuk-promo__content">
+      <h2 class="nhsuk-promo__heading">What does a Maternity exemption certificate entitle me to?</h2>
+      <p class="nhsuk-promo__description">What Matex entitles you to, how long it lasts etc.</p>
+    </div>
+  </a>
+</div>
+
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/service-manual/prototyping-tools">
+    <div class="nhsuk-promo__content">
+      <h2 class="nhsuk-promo__heading">What is a passporting benefit?</h2>
+      <p class="nhsuk-promo__description">What passporting benefits are and how they work.</p>
+    </div>
+  </a>
+</div>
+
+  </div>
+</div>
+
+ <div class="nhsuk-grid-row nhsuk-promo-group">
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/templates/question-page">
+    <div class="nhsuk-promo__content">
+    <h2 class="nhsuk-promo__heading">What are the current NHS treatment charges?</h2>
+      <p class="nhsuk-promo__description">Prescription and dental charges, costs of wigs and fabric support etc.</p>
+    </div>
+  </a>
+</div>
+
+      </div>
+  </div>
+</section>
+    </div>
+
+
+  </div>
+{% endblock %}
