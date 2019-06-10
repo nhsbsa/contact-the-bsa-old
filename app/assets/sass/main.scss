@@ -71,7 +71,7 @@ html {
 }
 .nhsuk-main-wrapper {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     display: block;
 }
 .nhsuk-main-wrapper>:first-child {
@@ -153,4 +153,50 @@ h2 {
 }
 .nhsuk-body-m, p {
     color: inherit;
+}
+.js-enabled .gem-c-feedback__js-show, .js-enabled .gem-c-feedback__form, .js-enabled .gem-c-feedback__prompt-success, .js-enabled .gem-c-feedback__js-prompt-questions, .js-enabled .gem-c-feedback__error-summary {
+    display: block;
+}
+
+.gem-c-feedback__prompt {
+    background-color: #005ea5;
+    color: #fff;
+    padding: 10px 15px 0;
+    outline: 0;
+}
+.gem-c-feedback__js-show, .gem-c-feedback__form, .gem-c-feedback__prompt-success, .gem-c-feedback__js-prompt-questions, .gem-c-feedback__error-summary {
+    display: none;
+}
+
+html, body, div, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup, nav, section {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.gem-c-feedback__prompt-question, .gem-c-feedback__prompt-success {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    display: inline-block;
+    margin: 0;
+}
+
+.gem-c-feedback__prompt-link:link, .gem-c-feedback__prompt-link:visited {
+    color: #fff;
+}
+.gem-c-feedback__prompt-link {
+    font-size: 16px;
+    line-height: 1.25;
+}
+.gem-c-feedback__prompt-link--wrong {
+    float: right;
+    clear: none;
+    margin-top: 0;
+    margin-left: 10px;
 }
