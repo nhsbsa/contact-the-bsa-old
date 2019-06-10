@@ -153,15 +153,17 @@ h2 {
 }
 .nhsuk-body-m, p {
     color: inherit;
+    margin-top: 40px;
 }
 .js-enabled .gem-c-feedback__js-show, .js-enabled .gem-c-feedback__form, .js-enabled .gem-c-feedback__prompt-success, .js-enabled .gem-c-feedback__js-prompt-questions, .js-enabled .gem-c-feedback__error-summary {
     display: block;
 }
 
 .gem-c-feedback__prompt {
-    background-color: #005ea5;
+    background-color: #005eb8;
     color: #fff;
     padding: 10px 15px 0;
+    margin: 60px 0 0;
     outline: 0;
 }
 .gem-c-feedback__js-show, .gem-c-feedback__form, .gem-c-feedback__prompt-success, .gem-c-feedback__js-prompt-questions, .gem-c-feedback__error-summary {

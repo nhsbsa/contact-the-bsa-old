@@ -1,0 +1,108 @@
+{% extends 'layouts/layout-nhsuk.html' %}
+
+{% block pageTitle %}
+  NHS.UK prototype kit - Start page template
+{% endblock %}
+
+{% block beforeContent %}
+{{ breadcrumb({
+  items: [
+    {
+      href: "#",
+      text: "Home"
+    },
+        {
+      href: "#",
+      text: "Section"
+    }
+  ],
+  href: "#",
+  text: "Subsection"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+
+
+<section class="nhsuk-section nhsuk-section--white">
+ 
+       <div class="nhsuk-width-container nhsuk-main-wrapper">
+
+<h1>I need to do</h1>
+<p>Select an option to find out what to do.</p> 
+
+     
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/templates/apply-services">
+    <div class="nhsuk-promo__content">
+      <h2 class="nhsuk-promo__heading">Apply for a service</h2>
+      <p class="nhsuk-promo__description">PPC, LIS, Medex, Matex etc</p>
+    </div>
+  </a>
+</div>
+
+      </div>
+
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/templates/how-long-take">
+    <div class="nhsuk-promo__content">
+    <h2 class="nhsuk-promo__heading">Tell us about a change of details</h2>
+      <p class="nhsuk-promo__description">Change name, address, marital status etc
+    </div>
+  </a>
+</div>
+
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/templates/how-to-get">
+    <div class="nhsuk-promo__content">
+      <h2 class="nhsuk-promo__heading">Cancel or stop one of our services</h2>
+      <p class="nhsuk-promo__description">All Services</p>
+    </div>
+  </a>
+</div>
+
+      </div>
+      
+    </div>
+
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/service-manual/styles-components-patterns">
+    <div class="nhsuk-promo__content">
+      <h2 class="nhsuk-promo__heading">Pay or challenge a Penalty Charge Notice</h2>
+      <p class="nhsuk-promo__description">How to pay and how to challenge</p>
+    </div>
+  </a>
+</div>
+    </div>
+<div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="/service-manual/styles-components-patterns">
+    <div class="nhsuk-promo__content">
+      <h2 class="nhsuk-promo__heading">Make a complaint</h2>
+      <p class="nhsuk-promo__description">Complain about one of our services</p>
+    </div>
+  </a>
+</div>
+      </div>
+
+
+  </div>
+</section>
+    </div>
+
+
+  </div>
+{% endblock %}
