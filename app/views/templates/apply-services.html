@@ -1,10 +1,8 @@
-{% extends 'layouts/layout-nhsuk.html' %}
+{% extends 'layouts/layout-transactional.html' %}
 
 {% block pageTitle %}
-  NHS.UK prototype kit - Start page template
-{% endblock %}
+  NHS.UK prototype kit - Blank transactional template
 
-{% block beforeContent %}
 {{ breadcrumb({
   items: [
     {
@@ -22,7 +20,10 @@
 {% endblock %}
 
 {% block content %}
-
+<style>
+    body {
+      background-color:#fff !important;
+    }</style>
 
 
 <section class="nhsuk-section nhsuk-section--white">
@@ -30,43 +31,67 @@
        <div class="nhsuk-width-container nhsuk-main-wrapper">
 
 <h1>About a service</h1>
+<div class="nhsuk-global-header__menusearch ui-front">
+  <div class="nhsuk-global-header__menu"><button class="menu-toggle__button" aria-controls="c-nav-primary" aria-label="Open menu">Menu</button></div>
+  <div class="nhsuk-global-header__search">
+    <div class="search-toggle">
+    
+    </div>
+    <div class="search-container" id="search-container">
+      <form class="c-search" id="gs" action="/search/" method="get" role="search">
+        <div class="c-search__container">
+          <label class="c-search__label visually-hidden" for="q">Search the NHS website</label>
+          <span class="twitter-typeahead" ><input class="c-search__input c-search__input--shadow visually-hidden" autocomplete="off" type="search" readonly="" spellcheck="false" tabindex="-1" dir="ltr" aria-hidden="true" ><input class="c-search__input tt-input" id="q" placeholder="Search" autocomplete="off" name="q" type="search" spellcheck="false" dir="auto" aria-owns="q_listbox" role="textbox" aria-readonly="true" aria-autocomplete="list" ><span role="status" aria-live="polite" ></span><pre aria-hidden="true" s></pre><div role="listbox" class="c-search-menu" id="q_listbox" aria-expanded="false"><div role="presentation" class="c-search-menu__results c-search-menu__results--suggestions"></div></div></span>
+          <button type="submit" class="c-search__submit">
+            <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
+              <image class="nhsuk-icon__search nhsuk-icon__search--fallback" src="/static/nhsuk_shared/img/icon-search-blue.352e1118d687.png" xlink:href="">
+            </image></svg>
+            <span class="visually-hidden">Search</span>
+          </button>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+</div>
 <p>Select an option to find out more information.</p> 
 
      
     <div class="nhsuk-grid-row nhsuk-promo-group">
+      
       <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
         
 <div class="nhsuk-promo">
-  <a class="nhsuk-promo__link-wrapper" href="/templates/content-ppc-apply">
+  <a class="nhsuk-promo__link-wrapper" href="/templates/apply-hwhc-articles">
     <div class="nhsuk-promo__content">
-      <h2 class="nhsuk-promo__heading">How do I apply for a PPC?</h2>
-      <p class="nhsuk-promo__description">How to apply for a Prescription Prepayment Certificate</p>
+      <h2 class="nhsuk-promo__heading">Help with Health Costs</h2>
+      <p class="nhsuk-promo__description">Free prescriptions, help with dental costs</p>
     </div>
   </a>
 </div>
 
       </div>
       <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-  <a class="nhsuk-promo__link-wrapper" href="/templates/content-matex">
+        
+<div class="nhsuk-promo">
+  <a class="nhsuk-promo__link-wrapper" href="">
     <div class="nhsuk-promo__content">
-    <h2 class="nhsuk-promo__heading">Who is entitled to a Maternity Exemption certificate?</h2>
-      <p class="nhsuk-promo__description">information about Matex certificates and who can get them.</p>
+    <h2 class="nhsuk-promo__heading">NHS Pensions</h2>
+      <p class="nhsuk-promo__description">claim your NHS pension, get pension estimates, opt out</p>
     </div>
   </a>
 </div>
 
-
-        
       </div>
       <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
         
 <div class="nhsuk-promo">
   <a class="nhsuk-promo__link-wrapper" href="/service-manual/prototyping-tools">
     <div class="nhsuk-promo__content">
-      <h2 class="nhsuk-promo__heading">What is a Prescription Prepayment Certificate?</h2>
-      <p class="nhsuk-promo__description">What a PPC is and how to apply/info about renewals etc.</p>
-    </div>
+            <h2 class="nhsuk-promo__heading">Student funding</h2>
+            <p class="nhsuk-promo__description">NHS or social work bursaries</p>
+        </div>
   </a>
 </div>
       </div>
@@ -77,54 +102,13 @@
 <div class="nhsuk-promo">
   <a class="nhsuk-promo__link-wrapper" href="/templates/question-page">
     <div class="nhsuk-promo__content">
-    <h2 class="nhsuk-promo__heading">How does Tax Credit exemption work?</h2>
-      <p class="nhsuk-promo__description">how to get, whether to renew etc.</p>
-    </div>
+    <h2 class="nhsuk-promo__heading">Overseas healthcare services</h2>
+    <p class="nhsuk-promo__description">buy an EHIC, apply for an S1 or S2</p>
+</div>
   </a>
 </div>
 
       </div>
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        
-<div class="nhsuk-promo">
-  <a class="nhsuk-promo__link-wrapper" href="/service-manual/frontend-library">
-    <div class="nhsuk-promo__content">
-      <h2 class="nhsuk-promo__heading">What does a medical exemption certificate entitle me to?</h2>
-      <p class="nhsuk-promo__description">What Matex entitles you to, how long it lasts etc.</p>
-    </div>
-  </a>
-</div>
-
-      </div>
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        
-<div class="nhsuk-promo">
-  <a class="nhsuk-promo__link-wrapper" href="/service-manual/prototyping-tools">
-    <div class="nhsuk-promo__content">
-      <h2 class="nhsuk-promo__heading">What is a passporting benefit?</h2>
-      <p class="nhsuk-promo__description">What passporting benefits are and how they work.</p>
-    </div>
-  </a>
-</div>
-
-  </div>
-</div>
-
- <div class="nhsuk-grid-row nhsuk-promo-group">
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        
-<div class="nhsuk-promo">
-  <a class="nhsuk-promo__link-wrapper" href="/templates/question-page">
-    <div class="nhsuk-promo__content">
-    <h2 class="nhsuk-promo__heading">What are the current NHS treatment charges?</h2>
-      <p class="nhsuk-promo__description">Prescription and dental charges, costs of wigs and fabric support etc.</p>
-    </div>
-  </a>
-</div>
-
-      </div>
-  </div>
-</section>
     </div>
 
 
