@@ -324,3 +324,19 @@ button {
     height: 27px;
     width: 27px;
 }
+ol {
+    list-style-type: none;
+}
+.app-c-contents-list__list-item--dashed {
+    margin-left: 20px;
+    padding-right: 20px;
+}
+.app-c-contents-list__list-item {
+    padding-top: 7.5px;
+    line-height: 1.3;
+    list-style-type: none;
+}
+.app-c-contents-list__list-item--dashed:before {
+    content: "— ";
+    margin-left: -20px;
+}
