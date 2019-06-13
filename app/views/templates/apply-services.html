@@ -3,6 +3,69 @@
 {% block pageTitle %}
   Apply for a service
 {% endblock %}
+{% block header %}
+  <header class="nhsuk-header nhsuk-header--transactional" role="banner">
+  <div class="nhsuk-width-container nhsuk-header__container">
+    <div class="nhsuk-header__logo">
+      <a class="nhsuk-header__link" href="/" aria-label="NHS homepage">
+        <svg class="nhsuk-logo nhsuk-logo--white" xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false" viewBox="0 0 40 16">
+          <path fill="#fff" d="M0 0h40v16H0z"></path>
+          <path fill="#005eb8" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+          <image src="https://assets.nhs.uk/images/nhs-logo.png" xlink:href=""></image>
+        </svg>
+      </a>
+    </div>
+    <div class="nhsuk-header__transactional-service-name">
+      <a class="nhsuk-header__transactional-service-name--link" href="/">Business Services Authority</a>
+    </div>
+
+    
+
+  </div>
+
+  </div>
+
+</header>
+<section class="nhsuk-hero">
+<div class="nhsuk-width-container">
+  <div class="nhsuk-hero--border">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <div class="nhsuk-hero__wrapper">
+          <h1 class="nhsuk-u-margin-bottom-3">Apply for a service</h1>
+          
+          <div class="nhsuk-global-header__menusearch ui-front">
+            <div class="nhsuk-global-header__menu"><button class="menu-toggle__button" aria-controls="c-nav-primary" aria-label="Open menu">Menu</button></div>
+            <div class="nhsuk-global-header__search">
+              <div class="search-toggle">
+              
+              </div>
+              <div class="search-container" id="search-container">
+                <form class="c-search" id="gs" action="/search/" method="get" role="search">
+                  <div class="c-search__container">
+                    <label class="c-search__label visually-hidden" for="q">Search the NHS website</label>
+                    <span class="twitter-typeahead" ><input class="c-search__input c-search__input--shadow visually-hidden" autocomplete="off" type="search" readonly="" spellcheck="false" tabindex="-1" dir="ltr" aria-hidden="true" ><input class="c-search__input tt-input" id="q" placeholder="Search" autocomplete="off" name="q" type="search" spellcheck="false" dir="auto" aria-owns="q_listbox" role="textbox" aria-readonly="true" aria-autocomplete="list" ><span role="status" aria-live="polite" ></span><pre aria-hidden="true" s></pre><div role="listbox" class="c-search-menu" id="q_listbox" aria-expanded="false"><div role="presentation" class="c-search-menu__results c-search-menu__results--suggestions"></div></div></span>
+                    <button type="submit" class="c-search__submit">
+                      <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
+                        <image class="nhsuk-icon__search nhsuk-icon__search--fallback" src="/static/nhsuk_shared/img/icon-search-blue.352e1118d687.png" xlink:href="">
+                      </image></svg>
+                      <span class="visually-hidden">Search</span>
+                    </button>
+                  </div>
+                </form>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% endblock %}
 
 {% block beforeContent %}
   {{ breadcrumb({
@@ -22,32 +85,8 @@
  
        <div class="nhsuk-width-container nhsuk-main-wrapper">
 
-<h1>Apply for a service</h1>
-<div class="nhsuk-global-header__menusearch ui-front">
-  <div class="nhsuk-global-header__menu"><button class="menu-toggle__button" aria-controls="c-nav-primary" aria-label="Open menu">Menu</button></div>
-  <div class="nhsuk-global-header__search">
-    <div class="search-toggle">
-    
-    </div>
-    <div class="search-container" id="search-container">
-      <form class="c-search" id="gs" action="/search/" method="get" role="search">
-        <div class="c-search__container">
-          <label class="c-search__label visually-hidden" for="q">Search the NHS website</label>
-          <span class="twitter-typeahead" ><input class="c-search__input c-search__input--shadow visually-hidden" autocomplete="off" type="search" readonly="" spellcheck="false" tabindex="-1" dir="ltr" aria-hidden="true" ><input class="c-search__input tt-input" id="q" placeholder="Search" autocomplete="off" name="q" type="search" spellcheck="false" dir="auto" aria-owns="q_listbox" role="textbox" aria-readonly="true" aria-autocomplete="list" ><span role="status" aria-live="polite" ></span><pre aria-hidden="true" s></pre><div role="listbox" class="c-search-menu" id="q_listbox" aria-expanded="false"><div role="presentation" class="c-search-menu__results c-search-menu__results--suggestions"></div></div></span>
-          <button type="submit" class="c-search__submit">
-            <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
-              <image class="nhsuk-icon__search nhsuk-icon__search--fallback" src="/static/nhsuk_shared/img/icon-search-blue.352e1118d687.png" xlink:href="">
-            </image></svg>
-            <span class="visually-hidden">Search</span>
-          </button>
-        </div>
-      </form>
-      
-    </div>
-  </div>
-</div>
-<p>Select an option to find out more information.</p> 
+
+<p>Select an option to find out which service to apply for.</p> 
 
      
     <div class="nhsuk-grid-row nhsuk-promo-group">
