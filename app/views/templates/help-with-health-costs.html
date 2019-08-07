@@ -1,7 +1,7 @@
 {% extends 'layouts/layout-transactional.html' %}
 
 {% block pageTitle %}
-Contact the BSA
+I need to find out
 {% endblock %}
 {% block header %}
 <header class="nhsuk-header nhsuk-header--transactional" role="banner">
@@ -23,19 +23,18 @@ Contact the BSA
     </div>
   </div>
 </header>
+
 <section class="nhsuk-hero">
   <div class="nhsuk-width-container">
     <div class="nhsuk-hero--border">
       <div class="nhsuk-grid-row">
         <div class="nhsuk-grid-column-two-thirds">
           <div class="nhsuk-hero__wrapper">
-            <h1 class="nhsuk-u-margin-bottom-3">Welcome to NHSBSA</h1>
+            <h1 class="nhsuk-u-margin-bottom-3">I need to find out</h1>
             <div class="nhsuk-global-header__menusearch ui-front">
               <div class="nhsuk-global-header__menu"><button class="menu-toggle__button" aria-controls="c-nav-primary"
                   aria-label="Open menu">Menu</button></div>
               <div class="nhsuk-global-header__search">
-                <div class="search-toggle">
-                </div>
                 <div class="search-container" id="search-container">
                   <form class="c-search" id="gs" action="/search/" method="get" role="search">
                     <div class="c-search__container">
@@ -46,11 +45,8 @@ Contact the BSA
                           class="c-search__input tt-input" id="q" placeholder="Search" autocomplete="off" name="q"
                           type="search" spellcheck="false" dir="auto" aria-owns="q_listbox" role="textbox"
                           aria-readonly="true" aria-autocomplete="list"><span role="status" aria-live="polite"></span>
-                        <pre aria-hidden="true" s></pre>
-                        <div role="listbox" class="c-search-menu" id="q_listbox" aria-expanded="false">
-                          <div role="presentation" class="c-search-menu__results c-search-menu__results--suggestions">
-                          </div>
-                        </div></span>
+                        <pre aria-hidden="true" s></pre>                     
+                      </span>
                       <button type="submit" class="c-search__submit">
                         <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -76,28 +72,33 @@ Contact the BSA
 </section>
 
 {% endblock %}
-{% block content %}
 
+{% block beforeContent %}
+{{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
 <style>
-  body {
-    background-color: #fff !important;
-    width: 100%;
-    margin: 0;
-  }
+body 
+{
+  background-color: #fff !important;
+}
 </style>
 
-<!--Learn-->
+
 <section class="nhsuk-section nhsuk-section--white">
   <div class="nhsuk-width-container nhsuk-main-wrapper">
-    <br>
+    <p>Select an option to find out more information.</p>
     <div class="nhsuk-grid-row nhsuk-promo-group">
       <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
         <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="help-with-health-costs.html">
+          <a class="nhsuk-promo__link-wrapper" href="/templates/about-services">
             <div class="nhsuk-promo__content">
-              <h2 class="nhsuk-promo__heading">Getting help with NHS costs</h2>
-              <p class="nhsuk-promo__description">Find out more information about the help we provide for your NHS
-                costs.</p>
+              <h2 class="nhsuk-promo__heading">About a service</h2>
+              <p class="nhsuk-promo__description">Find out about our services</p>
             </div>
           </a>
         </div>
@@ -105,10 +106,34 @@ Contact the BSA
 
       <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
         <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="/templates/do">
+          <a class="nhsuk-promo__link-wrapper" href="/templates/how-long-take">
             <div class="nhsuk-promo__content">
-              <h2 class="nhsuk-promo__heading">How long it takes to get help</h2>
-              <p class="nhsuk-promo__description">Find out how when your help with NHS costs will arrive</p>
+              <h2 class="nhsuk-promo__heading">How long will it take?</h2>
+              <p class="nhsuk-promo__description">Pensions, HwHC, Students</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="/templates/how-to-get">
+            <div class="nhsuk-promo__content">
+              <h2 class="nhsuk-promo__heading">how to get</h2>
+              <p class="nhsuk-promo__description">All Services</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+        <div class="nhsuk-promo">
+          <a class="nhsuk-promo__link-wrapper" href="/service-manual/styles-components-patterns">
+            <div class="nhsuk-promo__content">
+              <h2 class="nhsuk-promo__heading">what my circumstances entitle me to</h2>
+              <p class="nhsuk-promo__description">What can i get</p>
             </div>
           </a>
         </div>
@@ -116,71 +141,4 @@ Contact the BSA
     </div>
   </div>
 </section>
-
-
-<!--Do-->
-<section class="nhsuk-section nhsuk-section--white">
-  <div class="nhsuk-width-container nhsuk-main-wrapper">
-    <br>
-    <div class="nhsuk-grid-row nhsuk-promo-group">
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="/templates/learn">
-            <div class="nhsuk-promo__content">
-              <h2 class="nhsuk-promo__heading">Getting, renewing or replacing a certificate</h2>
-              <p class="nhsuk-promo__description">Find out more information about the help we provide for your NHS
-                costs</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="#">
-            <div class="nhsuk-promo__content">
-              <h2 class="nhsuk-promo__heading">Cancelling an application or certificate</h2>
-              <p class="nhsuk-promo__description">Find out how you can cancel an application or a certificate for helping with NHS health costs</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="#">
-            <div class="nhsuk-promo__content">
-              <h2 class="nhsuk-promo__heading">Complaining about something or appealing a decision</h2>
-              <p class="nhsuk-promo__description">Find out how how to complain about something or appeal a decision for receiving help with NHS health costs</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="nhsuk-grid-row nhsuk-promo-group">
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="#">
-            <div class="nhsuk-promo__content">
-              <h2 class="nhsuk-promo__heading">Reporting a changes in circumstance</h2>
-              <p class="nhsuk-promo__description">Find out more information about how to report a change in circumstances</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-        <div class="nhsuk-promo">
-          <a class="nhsuk-promo__link-wrapper" href="#">
-            <div class="nhsuk-promo__content">
-              <h2 class="nhsuk-promo__heading">Getting a refund</h2>
-              <p class="nhsuk-promo__description">Find out how, when and why to get a refund</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% include "../includes/footer-test.html" %}
 {% endblock %}
